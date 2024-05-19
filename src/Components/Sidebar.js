@@ -5,18 +5,12 @@ const Sidebar = () => {
   return (
     <div className='w-44 shadow-lg'>
       <h1 className='flex p-2 font-bold'>
-        <img className='mr-3' alt='home' 
-        src={HOME_ICON}/>
         Home
       </h1>
       <h1 className='flex p-2 font-bold'>
-        <img className='mr-3' alt='home' 
-        src={SUBSCRITIONS_ICON}/>
         Subscriptions
       </h1>
       <h1 className='flex p-2 font-bold'>
-        <img className='mr-3 w-6' alt='home' 
-        src={LIVE_ICON}/>
         Live 
       </h1>   
 
