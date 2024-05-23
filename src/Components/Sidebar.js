@@ -1,11 +1,15 @@
-import React from 'react'
-import { HOME_ICON, LIVE_ICON, SUBSCRITIONS_ICON } from '../utils/Constants';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+
+  if (!isMenuOpen) return null;
   return (
-    <div className='w-44 shadow-lg'>
+    <div className='w-44 shadow-lg '>
       <h1 className='flex p-2 font-bold'>
-        Home
+        <Link to="/">Home</Link> 
       </h1>
       <h1 className='flex p-2 font-bold'>
         Subscriptions
